@@ -25,3 +25,7 @@ The data was made publicly available under the MIT license.
  ``LIMIT 5;``
 
 ![Hacker News Top 5 Stories](https://user-images.githubusercontent.com/89424060/155738876-d6db634d-a2b6-48c8-ad53-0eca4cf6ae2a.png)
+
+### Tools used
+
++ SQlite
