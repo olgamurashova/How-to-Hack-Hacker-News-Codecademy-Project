@@ -42,3 +42,29 @@ ORDER BY 2 DESC;
    ELSE 'Other'
   END AS 'Source'
 FROM hacker_news;
+
+7. Adding a column for the number of stories from each URL using COUNT():
+ 
+ SELECT CASE
+   WHEN url LIKE '%github.com%' THEN 'GitHub'
+   WHEN url LIKE '%medium.com%' THEN 'Medium'
+   WHEN url LIKE '%nytimes.com%' THEN 'New York Times'
+   ELSE 'Other'
+  END AS 'Source',
+  COUNT(*)
+FROM hacker_news
+GROUP BY 1;
+  
+8. Returning timestamp data:
+ 
+ SELECT timestamp
+ FROM hacker_news
+ LIMIT 10;
+ 
+9. Returning the hour of the timestamp column:
+
+  SELECT timestamp,
+   strftime('%H', timestamp)
+FROM hacker_news
+GROUP BY 1
+LIMIT 20;
