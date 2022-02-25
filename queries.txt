@@ -18,4 +18,27 @@
  HAVING score > 200
  ORDER BY 2 DESC;
  
-4. 
+4. Adding these users’ scores together and divide by the total to get the percentage:
+  
+ SELECT (517 + 309 + 304 + 282) / 6366.0;
+ 
+ These 4 users have a combined 22% of the total scores in the table. 
+ 
+ 5. Counting how many times users clicked url https://www.youtube.com/watch?v=dQw4w9WgXcQ:
+ 
+  SELECT user,
+   COUNT(*)
+FROM hacker_news
+WHERE url LIKE '%watch?v=dQw4w9WgXcQ%'
+GROUP BY 1
+ORDER BY 2 DESC;
+ 
+ 6. Filtering which sites feed Hacker News the most:
+  
+  SELECT CASE
+   WHEN url LIKE '%github%' THEN 'GitHub'
+   WHEN url LIKE '%medium%' THEN 'Medium'
+   WHEN url LIKE '%nytimes%' THEN 'New York Times'
+   ELSE 'Other'
+  END AS 'Source'
+FROM hacker_news;
