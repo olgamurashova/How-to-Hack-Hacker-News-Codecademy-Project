@@ -1,4 +1,4 @@
-## How to Hack Hacker News-Codecademy Project
+## How to Hack Hacker News Codecademy Project
 
 ### General information
 
