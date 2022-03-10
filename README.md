@@ -1,6 +1,6 @@
 ## How to Hack Hacker News Codecademy Project
 
-### General information
+### Project information
 
 Hacker News is a popular website run by Y Combinator. It’s widely known by people in the tech industry as a community site for sharing news, showing off projects, asking questions, among other things.
 ![hacker news page](https://user-images.githubusercontent.com/89424060/155740582-5eb9ad5f-f3f1-466a-8d5a-3de9e555004a.png)
